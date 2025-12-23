@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Diagram Page 1 - Thai Translation</title>
+    <style>
+        body { font-family: 'Sarabun', sans-serif; display: flex; justify-content: center; background-color: #f0f0f0; padding: 20px; }
+        .drawing-container { background-color: white; border: 1px solid #999; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 20px; width: 1000px; overflow-x: auto; }
+        svg { width: 100%; height: auto; min-width: 900px; }
+        text { font-family: sans-serif; fill: #000; font-size: 12px; }
+        .title-text { font-size: 16px; font-weight: bold; text-anchor: middle; }
+        .label-text { font-size: 14px; font-weight: bold; text-anchor: middle; }
+        .small-text { font-size: 10px; }
+        .line { stroke: #000; stroke-width: 1.5; fill: none; }
+        .dash-line { stroke: #666; stroke-width: 1; stroke-dasharray: 5,5; }
+        .bus-bar { stroke: #000; stroke-width: 2; }
+        .component-box { fill: none; stroke: #000; stroke-width: 1; }
+    </style>
+</head>
+<body>
+
+<div class="drawing-container">
+    <h2 style="text-align:center;">แผนผังระบบไฟฟ้า หน้า 1 (Electrical Diagram Page 1)</h2>
+    
+    <svg viewBox="0 0 1000 700">
+        <text x="300" y="30" class="title-text">H1</text>
+        <text x="600" y="30" class="title-text">H2</text>
+        <text x="800" y="30" class="title-text">H3</text>
+
+        <text x="300" y="50" class="label-text">PC / คอมพิวเตอร์</text>
+        <text x="480" y="50" class="label-text">Main Switch / สวิตช์หลัก</text>
+        <text x="630" y="50" class="label-text">Control Power / ไฟควบคุม</text>
+        <text x="800" y="50" class="label-text">DC Power / ไฟ DC</text>
+
+        <line x1="200" y1="60" x2="200" y2="650" class="dash-line" />
+        <line x1="400" y1="60" x2="400" y2="650" class="dash-line" />
+        <line x1="550" y1="60" x2="550" y2="650" class="dash-line" />
+        <line x1="880" y1="60" x2="880" y2="650" class="dash-line" />
+
+        <text x="50" y="95" class="small-text">L1</text>
+        <line x1="80" y1="90" x2="950" y2="90" class="bus-bar" />
+        
+        <text x="50" y="115" class="small-text">L2</text>
+        <line x1="80" y1="110" x2="950" y2="110" class="bus-bar" />
+        
+        <text x="50" y="135" class="small-text">L3</text>
+        <line x1="80" y1="130" x2="950" y2="130" class="bus-bar" />
+        
+        <text x="50" y="155" class="small-text">N</text>
+        <line x1="80" y1="150" x2="950" y2="150" class="bus-bar" />
+        
+        <text x="50" y="175" class="small-text">PE</text>
+        <line x1="80" y1="170" x2="950" y2="170" class="bus-bar" />
+
+        <line x1="450" y1="60" x2="450" y2="90" class="line" /> <line x1="460" y1="60" x2="460" y2="110" class="line" /> <line x1="470" y1="60" x2="470" y2="130" class="line" /> <line x1="450" y1="75" x2="465" y2="65" class="line" />
+        <line x1="460" y1="95" x2="475" y2="85" class="line" />
+        <line x1="470" y1="115" x2="485" y2="105" class="line" />
+        
+        <text x="490" y="75" class="small-text">QS1</text>
+        <text x="490" y="85" class="small-text">VBF-3(64A)</text>
+
+        <circle cx="280" cy="90" r="3" fill="black" /> <line x1="280" y1="90" x2="280" y2="200" class="line" />
+        
+        <circle cx="290" cy="150" r="3" fill="black" /> <line x1="290" y1="150" x2="290" y2="200" class="line" />
+
+        <rect x="270" y="200" width="30" height="40" class="component-box" />
+        <text x="310" y="220" class="small-text">QF1</text>
+        <text x="310" y="235" class="small-text">C65N-C6A-2P</text>
+        
+        <line x1="280" y1="240" x2="280" y2="280" class="line" />
+        <line x1="290" y1="240" x2="290" y2="280" class="line" />
+
+        <rect x="260" y="280" width="50" height="40" class="component-box" />
+        <text x="285" y="305" text-anchor="middle" class="small-text">UPS (Option)</text>
+
+        <line x1="280" y1="320" x2="280" y2="360" class="line" />
+        <line x1="290" y1="320" x2="290" y2="360" class="line" />
+
+        <rect x="270" y="360" width="30" height="20" class="component-box" />
+        
+        <rect x="250" y="420" width="60" height="50" class="component-box" />
+        <text x="280" y="450" text-anchor="middle" style="font-weight:bold;">PC</text>
+
+        <rect x="340" y="420" width="40" height="40" class="component-box" />
+        <text x="360" y="445" text-anchor="middle" class="small-text">Monitor</text>
+        <text x="360" y="460" text-anchor="middle" class="small-text">จอภาพ</text>
+
+        <line x1="310" y1="440" x2="340" y2="440" class="line" />
+
+        <line x1="280" y1="470" x2="280" y2="520" class="line" />
+        <text x="290" y="530" class="small-text">Mouse/Keyboard (ไร้สาย)</text>
+        <path d="M 275 520 L 285 520 L 280 530 Z" fill="black" /> <line x1="250" y1="440" x2="220" y2="440" class="line" />
+        <line x1="220" y1="440" x2="220" y2="600" class="line" />
+        <text x="210" y="550" class="small-text" transform="rotate(-90, 210, 550)">To PLC01 / ไป PLC01</text>
+        <path d="M 215 600 L 225 600 L 220 610 Z" fill="black" />
+
+         <line x1="230" y1="600" x2="230" y2="650" class="line" />
+         <text x="240" y="640" class="small-text">To Head Driver / ไปบอร์ดหัวพิมพ์</text>
+
+
+        <circle cx="600" cy="90" r="3" fill="black" /> <line x1="600" y1="90" x2="600" y2="200" class="line" />
+
+        <circle cx="615" cy="130" r="3" fill="black" /> <line x1="615" y1="130" x2="615" y2="200" class="line" />
+
+        <rect x="590" y="200" width="35" height="40" class="component-box" />
+        <text x="640" y="220" class="small-text">QF2</text>
+        <text x="640" y="235" class="small-text">C65N-C6A-2P</text>
+
+        <line x1="600" y1="240" x2="600" y2="300" class="line" />
+        <line x1="615" y1="240" x2="615" y2="300" class="line" />
+        
+        <circle cx="600" cy="310" r="10" fill="none" stroke="black" />
+        <circle cx="600" cy="325" r="10" fill="none" stroke="black" />
+        
+        <text x="630" y="315" class="small-text">BK1</text>
+        <text x="630" y="330" class="small-text">380-220VAC</text>
+
+        <line x1="600" y1="335" x2="600" y2="400" class="line" />
+        <line x1="615" y1="335" x2="615" y2="400" class="line" />
+        <text x="610" y="420" text-anchor="middle" class="small-text">220VAC Control</text>
+
+
+        <circle cx="800" cy="90" r="3" fill="black" /> <line x1="800" y1="90" x2="800" y2="200" class="line" />
+
+        <circle cx="815" cy="150" r="3" fill="black" /> <line x1="815" y1="150" x2="815" y2="200" class="line" />
+
+        <rect x="790" y="200" width="35" height="40" class="component-box" />
+        <text x="840" y="220" class="small-text">QF3</text>
+        <text x="840" y="235" class="small-text">C65N-C6A-2P</text>
+
+        <rect x="790" y="300" width="50" height="60" class="component-box" />
+        <line x1="790" y1="300" x2="840" y2="360" class="line" /> <text x="850" y="320" class="small-text">E1</text>
+        <text x="850" y="335" class="small-text">NDR-240-24</text>
+
+        <line x1="800" y1="240" x2="800" y2="300" class="line" />
+        <line x1="815" y1="240" x2="815" y2="300" class="line" />
+
+        <line x1="800" y1="360" x2="800" y2="420" class="line" />
+        <line x1="820" y1="360" x2="820" y2="420" class="line" />
+        <text x="810" y="440" text-anchor="middle" class="small-text">24VDC Output</text>
+
+    </svg>
+    
+    <div style="margin-top:20px; border-top:1px solid #ccc; padding-top:10px;">
+        <p><strong>Title Block / ตารางท้ายหน้า:</strong></p>
+        <table border="1" style="border-collapse:collapse; width:50%; font-size:12px;">
+            <tr><td>制图 / เขียนแบบ</td><td>Yang Pengxiang</td></tr>
+            <tr><td>บริษัท</td><td>Hangzhou Hongying Digital Tech</td></tr>
+            <tr><td>รุ่น</td><td>S-Type Machine</td></tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
